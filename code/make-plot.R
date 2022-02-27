@@ -26,3 +26,8 @@ ggsave(filename = "outputs/result.png",
        plot = g,
        height = 10.5, width = 14.8,
        units = "cm")
+
+
+sink(file = "outputs/package-versions.txt")
+sessionInfo()
+sink()
